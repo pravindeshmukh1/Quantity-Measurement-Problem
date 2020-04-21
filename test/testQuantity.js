@@ -14,4 +14,7 @@ describe('Testing for Length Check', function () {
     it('given value Ft should return type as number ', function () {
         assert.typeOf(lengthMeasurement.feetConverter(0), 'Number')
     })
+    it('given value 0 Inch and 0 Inch Length if equal should return true', function () {
+        assert.equal(0, lengthMeasurement.inchConverter(0))
+    })
 })
