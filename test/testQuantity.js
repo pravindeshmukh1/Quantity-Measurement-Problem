@@ -23,4 +23,7 @@ describe('Testing for Length Check', function () {
     it('given value 0 Inch and null in Inch if null should return wrong value ', function () {
         assert.isNull(null, lengthMeasurement.inchConverter(0))
     })
+    it('given value Inch should return type as number ', function () {
+        assert.typeOf(lengthMeasurement.inchConverter(0), 'Number')
+    })
 })
