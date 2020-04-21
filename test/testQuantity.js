@@ -20,4 +20,7 @@ describe('Testing for Length Check', function () {
     it('given value 0 Inch and 1 Inch Length if not equal should return true', function () {
         assert.notEqual(0, lengthMeasurement.inchConverter(1))
     })
+    it('given value 0 Inch and null in Inch if null should return wrong value ', function () {
+        assert.isNull(null, lengthMeasurement.inchConverter(0))
+    })
 })
