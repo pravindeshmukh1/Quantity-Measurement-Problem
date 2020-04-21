@@ -6,5 +6,8 @@ class QuantityMeasurement {
     inchConverter(length) {
         return length;
     }
+    yardConvertor(length) {
+        return length * 36;
+    }
 }
 module.exports = new QuantityMeasurement;
