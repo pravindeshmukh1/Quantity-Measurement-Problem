@@ -44,4 +44,7 @@ describe('Testing for Length Check', function () {
     it('given 1 Inch and 1 Yard if not equal should return true', function () {
         assert.notEqual(lengthMeasurement.inchConverter(1), lengthMeasurement.yardConvertor(1))
     })
+    it('given 1 Yard and 36 Inch if equal should return true', function () {
+        assert.equal(lengthMeasurement.yardConvertor(1), lengthMeasurement.inchConverter(36))
+    })
 })
