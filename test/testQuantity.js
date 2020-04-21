@@ -10,4 +10,9 @@ describe('Testing for Length Check', function () {
         let lengthMeasurementCheck = lengthMeasurement.checkLength(0, 1);
         assert.notEqual(true, lengthMeasurementCheck)
     })
+    it('given value 0 Ft and null Length if equal should return null', function () {
+        let lengthMeasurementCheck = lengthMeasurement.checkLength(0, null);
+        assert.notEqual(true, lengthMeasurementCheck)
+    })
+
 })
