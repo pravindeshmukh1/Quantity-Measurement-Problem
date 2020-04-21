@@ -1,9 +1,7 @@
 console.log("Welcome Quantity Measurement");
 class QuantityMeasurement {
-    checkLength(length1, length2) {
-        if (length1 == length2) {
-            return true
-        }
+    feetConverter(length) {
+        return length * 12;
     }
 }
 module.exports = new QuantityMeasurement;
