@@ -27,6 +27,9 @@ describe('Testing for Length Check', function () {
         assert.typeOf(lengthMeasurement.inchConverter(0), 'Number')
     })
     it('given value 1 Ft and 1 Inch if not equal should return true', function () {
-        assert.notEqual(lengthMeasurement.feetConverter(1), lengthMeasurement.inchConverter(1.1))
+        assert.notEqual(lengthMeasurement.feetConverter(1), lengthMeasurement.inchConverter(1))
+    })
+    it('given value 1 Inch and 1 Feet if not equal should return true', function () {
+        assert.notEqual(lengthMeasurement.feetConverter(1), lengthMeasurement.inchConverter(1))
     })
 })
