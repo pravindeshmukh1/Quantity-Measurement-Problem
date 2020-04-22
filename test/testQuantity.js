@@ -1,5 +1,6 @@
 var assert = require('chai').assert;
-var lengthMeasurement = require('../app/quantityMeasurement');
+var lengthMeasurement = require('../app/length');
+var volumeMeasurement = require('../app/volume');
 
 describe('Testing for Length Check', function () {
     it('given value 0 Ft and 0 Ft Length if equal should return true', function () {
@@ -84,9 +85,9 @@ describe('Testing for Length Check', function () {
     })
     // UC5
     it('given 1 Gallon and 3.78 litre if equal should return true', function () {
-        assert.equal(lengthMeasurement.gallonConverter(1), lengthMeasurement.litreConverter(3.78))
+        assert.equal(volumeMeasurement.gallonConverter(1), volumeMeasurement.litreConverter(3.78))
     })
     it('given 1 Litre and 1000 Millimeter if equal should return true', function () {
-        assert.equal(lengthMeasurement.litreConverter(1), lengthMeasurement.millimeterConverter(1000))
+        assert.equal(volumeMeasurement.litreConverter(1), volumeMeasurement.millimeterConverter(1000))
     })
 })

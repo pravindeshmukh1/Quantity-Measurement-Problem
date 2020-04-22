@@ -1,5 +1,5 @@
 console.log("Welcome Quantity Measurement");
-class QuantityMeasurement {
+class LengthMeasurement {
     feetConverter(length) {
         return length * 12;
     }
@@ -15,14 +15,5 @@ class QuantityMeasurement {
     addLength(length, length1) {
         return length + length1;
     }
-    gallonConverter(volume) {
-        return volume * 3.78
-    }
-    litreConverter(volume) {
-        return volume
-    }
-    millimeterConverter(volume) {
-        return volume / 1000
-    }
 }
-module.exports = new QuantityMeasurement;
+module.exports = new LengthMeasurement;
