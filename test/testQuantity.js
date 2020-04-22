@@ -2,7 +2,7 @@ var assert = require('chai').assert;
 var lengthMeasurement = require('../app/length');
 var volumeMeasurement = require('../app/volume');
 var weightMeasurement = require('../app/weight');
-
+var temperatureMeasurement = require('../app/temperature');
 
 describe('Testing for Length Check', function () {
     it('given value 0 Ft and 0 Ft Length if equal should return true', function () {
@@ -116,5 +116,9 @@ describe('Testing for Length Check', function () {
         var mass2 = weightMeasurement.gramConverter(1000)
         var result = weightMeasurement.addWeight(mass1, mass2)
         assert.equal(result, 1001)
+    })
+    //UC8
+    it('given value 212 Fahrenheit and 100 Celsius if equal should return true', function () {
+        assert.equal(temperatureMeasurement.fahrenheitConverter(212), temperatureMeasurement.celsiusConverter(100))
     })
 })
