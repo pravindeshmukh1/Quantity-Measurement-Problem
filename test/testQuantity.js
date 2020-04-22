@@ -96,4 +96,10 @@ describe('Testing for Length Check', function () {
         var result = volumeMeasurement.addVolume(volume1, volume2)
         assert.equal(result, 7.56)
     })
+    it('given value 1 Litre and 1000 Millimeter then should return Additon of them', function () {
+        var volume1 = volumeMeasurement.litreConverter(1)
+        var volume2 = volumeMeasurement.millimeterConverter(1000)
+        var result = volumeMeasurement.addVolume(volume1, volume2)
+        assert.equal(result, 2)
+    })
 })
