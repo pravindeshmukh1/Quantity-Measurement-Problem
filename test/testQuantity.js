@@ -53,9 +53,11 @@ describe('Testing for Length Check', function () {
     it('given 1 Yard and 3 Feet if equal should return true', function () {
         assert.equal(lengthMeasurement.yardConvertor(1), lengthMeasurement.feetConverter(3))
     })
+    //UC3
     it('given 2 Inch and 5 Cm if equal should return true', function () {
         assert.equal(lengthMeasurement.inchConverter(2), lengthMeasurement.centimeterConverter(5))
     })
+    //UC4
     it('given value 2 Inch and 2 Inch then should return Additon of them', function () {
         var length = lengthMeasurement.inchConverter(2)
         var length1 = lengthMeasurement.inchConverter(2)
@@ -79,5 +81,9 @@ describe('Testing for Length Check', function () {
         var length1 = lengthMeasurement.centimeterConverter(2.5)
         var result = lengthMeasurement.addLength(length, length1)
         assert.equal(result, 3)
+    })
+    // UC5
+    it('given 1 Gallon and 3.78 litre if equal should return true', function () {
+        assert.equal(lengthMeasurement.gallonConverter(1), lengthMeasurement.litreConverter(3.78))
     })
 })

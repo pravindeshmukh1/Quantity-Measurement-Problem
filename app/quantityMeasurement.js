@@ -15,5 +15,11 @@ class QuantityMeasurement {
     addLength(length, length1) {
         return length + length1;
     }
+    gallonConverter(volume) {
+        return volume * 3.78
+    }
+    litreConverter(volume) {
+        return volume
+    }
 }
 module.exports = new QuantityMeasurement;
