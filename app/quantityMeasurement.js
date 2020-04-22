@@ -12,5 +12,8 @@ class QuantityMeasurement {
     centimeterConverter(length) {
         return Math.ceil(length * 0.3937);
     }
+    addLength(length, length1) {
+        return length + length1;
+    }
 }
 module.exports = new QuantityMeasurement;

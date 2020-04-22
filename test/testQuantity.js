@@ -56,4 +56,10 @@ describe('Testing for Length Check', function () {
     it('given 2 Inch and 5 Cm if equal should return true', function () {
         assert.equal(lengthMeasurement.inchConverter(2), lengthMeasurement.centimeterConverter(5))
     })
+    it('given value 2 Inch and 2 Inch then should return Additon of them', function () {
+        var length = lengthMeasurement.inchConverter(2)
+        var length1 = lengthMeasurement.inchConverter(2)
+        var result = lengthMeasurement.addLength(length, length1)
+        assert.equal(result, 4)
+    })
 })
