@@ -62,4 +62,10 @@ describe('Testing for Length Check', function () {
         var result = lengthMeasurement.addLength(length, length1)
         assert.equal(result, 4)
     })
+    it('given value 1 Feet and 2 Inch then should return Additon of them', function () {
+        var length = lengthMeasurement.feetConverter(1)
+        var length1 = lengthMeasurement.inchConverter(2)
+        var result = lengthMeasurement.addLength(length, length1)
+        assert.equal(result, 14)
+    })
 })
