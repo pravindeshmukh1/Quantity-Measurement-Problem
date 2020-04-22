@@ -21,5 +21,8 @@ class QuantityMeasurement {
     litreConverter(volume) {
         return volume
     }
+    millimeterConverter(volume) {
+        return volume / 1000
+    }
 }
 module.exports = new QuantityMeasurement;

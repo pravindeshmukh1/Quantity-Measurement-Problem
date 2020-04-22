@@ -86,4 +86,7 @@ describe('Testing for Length Check', function () {
     it('given 1 Gallon and 3.78 litre if equal should return true', function () {
         assert.equal(lengthMeasurement.gallonConverter(1), lengthMeasurement.litreConverter(3.78))
     })
+    it('given 1 Litre and 1000 Millimeter if equal should return true', function () {
+        assert.equal(lengthMeasurement.litreConverter(1), lengthMeasurement.millimeterConverter(1000))
+    })
 })
