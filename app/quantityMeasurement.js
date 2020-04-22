@@ -9,5 +9,8 @@ class QuantityMeasurement {
     yardConvertor(length) {
         return length * 36;
     }
+    centimeterConverter(length) {
+        return Math.ceil(length * 0.3937);
+    }
 }
 module.exports = new QuantityMeasurement;
