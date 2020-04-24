@@ -10,7 +10,7 @@ describe(`Testing for Weight Measurement`, function () {
     it(`given 1 Tonne and 1000 Kg if equal should return true`, function () {
         assert.equal(weightMeasurement.tonneConverter(1), weightMeasurement.kilogramConverter(1000))
     })
-    //TC-Compare Different Weight Value 1 Tonne & 1000 Gram
+    //TC-Addition of Different Weight Value 1 Tonne & 1000 Gram
     it(`given value 1 Tonne and 1000 Gram then should return Additon of them`, function () {
         var mass1 = weightMeasurement.tonneConverter(1)
         var mass2 = weightMeasurement.gramConverter(1000)
