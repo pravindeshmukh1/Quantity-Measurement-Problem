@@ -1,13 +1,28 @@
 console.log(`Welcome Quantity Measurement`);
 class LengthMeasurement {
-    feetConverter = (length) => { return length * 12 };
+    //Convert Feet to Inch
+    feetConverter = (length) => {
+        let result = length * 12;
+        return result
+    }
 
-    inchConverter = (length) => { return length };
-
-    yardConvertor = (length) => { return length * 36 };
-
-    centimeterConverter = (length) => { return Math.ceil(length * 0.3937) };
-
-    addLength = (length, length1) => { return length + length1 };
+    inchConverter = (length) => {
+        return length;
+    }
+    //Convert Yard to Inch
+    yardConvertor = (length) => {
+        let result = length * 36;
+        return result;
+    }
+    //Convert Cm to Inch
+    centimeterConverter = (length) => {
+        let result = Math.ceil(length * 0.3937);
+        return result;
+    }
+    //Addtion Lengths
+    addLength = (length1, length2) => {
+        let result = length1 + length2;
+        return result
+    }
 }
 module.exports = new LengthMeasurement;
